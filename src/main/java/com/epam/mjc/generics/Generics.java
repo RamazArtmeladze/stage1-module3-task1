@@ -9,8 +9,6 @@ public class Generics {
     public List<String> boxingMethod(String name) {
         List<String> firstList = new ArrayList<>();
         firstList.add(name);
-        List<List<String>> secondList = new ArrayList<>();
-        secondList.add(firstList);
         return firstList;
     }
 
