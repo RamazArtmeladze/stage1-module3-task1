@@ -6,10 +6,12 @@ import java.util.List;
 public class Generics {
 
     // Refactored Method-1
-    public List<String> boxingMethod(String name) {
+    public List<List<String>> boxingMethod(String name) {
         List<String> firstList = new ArrayList<>();
         firstList.add(name);
-        return firstList;
+        List<List<String>> secondList = new ArrayList<>();
+        secondList.add(firstList);
+        return secondList;
     }
 
     // Refactored Method-2
